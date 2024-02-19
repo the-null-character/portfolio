@@ -15,6 +15,36 @@
             overflow-x: hidden; /* Hide horizontal scrollbar */
         }
 
+
+        .certificate-tile {
+            margin-bottom: 20px;
+            max-height: 100%;
+            padding: auto;
+            width: fit-content;
+        }
+
+        .certificate-thumbnail {
+            max-width: 60%;
+            max-height: 60%;
+            margin-left: 10px;
+            margin-right: 10px;
+
+        }
+
+        .certificate-details {
+            padding: 10px;
+        }
+
+        .certificate-buttons {
+            margin-top: 10px;
+            text-align: center;
+        }
+
+
+        .btn-secondary {
+            margin-left: 5px;
+        }
+
         header {
             background-color: #000000;
             color: #ffffff;
@@ -29,7 +59,7 @@
 
         /* Add a class to the header background image */
         .header-bg {
-            background-image: url('parallax.jpg'); /* Add your image path here */
+            background-image: url('bg.jpg'); /* Add your image path here */
             /* Adjust height as needed */
             height: 100vh; /* 100% of the viewport height */
         }
@@ -50,13 +80,18 @@
 
 
         .card{
-            border-color: #0500a2;
+            border-color: #8569ff;
             height: 290px;
         }
 
         .btn{
             background-color: #000000;
             margin-bottom: auto;
+        }
+
+        .btn-primary{
+            border-color: #000000;
+            margin-right: 5px;
         }
 
         footer {
@@ -105,10 +140,15 @@
         }
 
         .card-body {
-            background-color: #0500a2;
-            outline-color: #0500a2;
-            border-color: #0500a2;
-            height: min-content;
+            background-color: #8569ff;
+            outline-color: #8569ff;
+            border-color: #8569ff;
+            height: max-content;
+            max-height: 100%;
+        }
+
+        .card-title{
+            font-weight: 775;
         }
 
         p {
@@ -129,7 +169,7 @@
         }
     </style>
 </head>
-<body>
+<body background="bg.jpg">
 
     <header class="header-bg">
         <h1 class="typewriter-text" style="font-family: 'Press Start 2P', cursive; font-size: 2em;">Akshay Sripriya</h1>
@@ -157,14 +197,66 @@
     <section id="certifications">
         <div class="container">
             <h2>Certifications</h2>
-            <div class="certificates">
-                <!-- Add your certifications here -->
-                <p>Certificate 1</p>
-                <p>Certificate 2</p>
-                <p>Certificate 3</p>
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="certificate-tile">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="certificate-title">Certificate in Advanced English - Cambridge</h5>
+                                <img src="cae.jpg" alt="Certificate 1" class="certificate-thumbnail">
+                                <div class="certificate-details">
+                                    <div class="certificate-buttons">
+                                        <a href="cae.pdf.pdf" target="_blank" class="btn btn-primary">View PDF</a>
+                                        <a href="StatementOfResult (1).pdf" target="_blank" class="btn btn-secondary">Verify</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="certificate-tile">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="certificate-title">MERN Full Stack Internship Program - Ethnus</h5>
+                                <img src="FSRT2S3H_page-0001.jpg" alt="Certificate 1" class="certificate-thumbnail">
+                                <div class="certificate-details">
+                                    <div class="certificate-buttons">
+                                        <a href="FSRT2S3H.pdf" target="_blank" class="btn btn-primary">View PDF</a>
+                                        <a href="https://ethnus.com/certverify" target="_blank" class="btn btn-secondary">Verify</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="certificate-tile">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="certificate-title">Soft Skill Development - NPTEL</h5>
+                                <img src="NPTEL23HS80S2533323110024436_page-0001.jpg" alt="Certificate 1" class="certificate-thumbnail">
+                                <div class="certificate-details">
+                                    <div class="certificate-buttons">
+                                        <a href="NPTEL23HS80S2533323110024436.pdf" target="_blank" class="btn btn-primary">View PDF</a>
+                                        <a href="https://archive.nptel.ac.in/noc/Ecertificate/?q=NPTEL23HS80S2533323110024436" target="_blank" class="btn btn-secondary">Verify</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Add more certificate tiles as needed -->
             </div>
         </div>
     </section>
+
+
+
+
 
     <section id="papers">
         <div class="container">
