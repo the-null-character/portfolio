@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akshay - the-null-character</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #5b66ff;
+            color: #ffffff;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden; /* Hide horizontal scrollbar */
+        }
+
+        header {
+            background-color: #000000;
+            color: #ffffff;
+            text-align: center;
+            padding: 50px 0;
+            /* Parallax effect */
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        /* Add a class to the header background image */
+        .header-bg {
+            background-image: url('parallax.jpg'); /* Add your image path here */
+            /* Adjust height as needed */
+            height: 100vh; /* 100% of the viewport height */
+        }
+
+        section {
+            padding: 50px 0;
+        }
+
+        .project-card {
+            margin-bottom: 20px;
+            outline-color: #0500a2;
+            border-color: #0500a2;
+        }
+
+        .card{
+            border-color: #0500a2;
+        }
+
+        .btn{
+            background-color: #000000;
+        }
+
+        footer {
+            background-color: #000000;
+            color: #ffffff;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        .footer-bg {
+            background-image: url('parallax.jpg'); /* Add your footer background image path here */
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            color: #ffffff;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        .typewriter-text {
+            overflow: hidden; /* Ensures the text is hidden initially */
+            border-right: .15em solid orange; /* Vertical blinking cursor */
+            white-space: nowrap; /* Keeps the text on one line */
+            margin: 0 auto; /* Centers the text horizontally */
+            letter-spacing: .15em; /* Adjust letter spacing for better visibility */
+            animation: typewriter 4s steps(40) infinite alternate; /* Typewriter animation */
+        }
+
+        @keyframes typewriter {
+            from {
+                width: 0; /* Start with no width */
+            }
+            to {
+                width: 100%; /* End with full width */
+            }
+        }
+
+        /* Typography for subheadings */
+        h2 {
+
+            font-size: 2em;
+            font-weight: bold;
+            color: #2bdf1e; /* Blue color */
+            margin-bottom: 20px;
+        }
+
+        .card-body {
+            background-color: #0500a2;
+            outline-color: #0500a2;
+            border-color: #0500a2;
+        }
+
+        p {
+            font-family: 'Georgia', serif;
+            font-size: 1.2em;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        /* Responsive styles for smaller screens */
+        @media (max-width: 768px) {
+            h2 {
+                font-size: 1.5em;
+            }
+            p {
+                font-size: 1em;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header class="header-bg">
+        <h1 class="typewriter-text" style="font-family: 'Press Start 2P', cursive; font-size: 2em;">Akshay Sripriya</h1>
+        <p style="font-family: 'Press Start 2P', cursive; font-size: 1em;">Aspirer | Dreamer | Worker</p>
+    </header>
+
+
+
+    <section id="about" class="scroll-reveal">
+        <div class="container">
+            <br><br>
+            <h2>About Me</h2>
+            <p>Hey there, fellow tech enthusiast! Welcome to my corner of the digital universe! I'm your friendly neighborhood collaborator extraordinaire, always buzzing with excitement and ready to embark on thrilling tech adventures. With a heart full of passion for AI, Web Development, Software Engineering, and IoT, I'm like a kid in a candy store when it comes to diving into innovative projects and teaming up with like-minded folks. Whether I'm tinkering with code in Python, JavaScript, or Java, you can bet I'm fueled by boundless curiosity and a drive to make magic happen. But hold on, life's not just about lines of code and debugging sessions! When I'm not busy crafting digital wonders, you might find me channeling my inner culinary maestro in the kitchen or strumming away on my keyboard or Ukulele, serenading the universe with my melodic creations. And hey, who can resist the thrill of a good old game of cricket? Because sometimes, you've just gotta swing for the fences, both in tech and in life! So come on in, grab a virtual seat, and let's embark on this wild journey together!</p>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="row" id="projects-list"></div>
+
+        </div>
+    </section>
+
+    <section id="certifications">
+        <div class="container">
+            <h2>Certifications</h2>
+            <div class="certificates">
+                <!-- Add your certifications here -->
+                <p>Certificate 1</p>
+                <p>Certificate 2</p>
+                <p>Certificate 3</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="papers">
+        <div class="container">
+            <h2>Papers</h2>
+            <div class="papers">
+                <!-- Add your published papers here -->
+                <p>Paper 1</p>
+                <p>Paper 2</p>
+                <p>Paper 3</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="songs">
+        <div class="container">
+            <h2>Songs</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="song">
+                        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/68Ttudf4AQZH7oZaMGxpCw?utm_source=generator" width="100%" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="song">
+                        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/1FFwuoIJwq8r8GoUdnjRLS?utm_source=generator" width="100%" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="instagram">
+        <div class="container">
+            <h2>Instagram Reels</h2>
+            <!-- Add your Instagram reels here -->
+
+            <div class="reels">
+                <iframe src="https://www.instagram.com/p/CmqJzPGAcDZ/" width="300" height="500" frameborder="0"></iframe>
+                <iframe src="https://www.instagram.com/p/REPLACE_WITH_EMBED_CODE/" width="300" height="500" frameborder="0"></iframe>
+                <iframe src="https://www.instagram.com/p/REPLACE_WITH_EMBED_CODE/" width="300" height="500" frameborder="0"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer-bg">
+        <div class="container">
+            <p>&copy; 2024 Akshay Sripriya - Portfolio</p>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <script>
+        ScrollReveal().reveal('.scroll-reveal', { delay: 300, distance: '150px', origin: 'bottom', easing: 'ease-out', reset: true });
+    </script>
+
+
+    <script>
+        // Dummy data for projects (replace this with real data from your GitHub)
+        const projectsData = [
+            { name: 'VanIK', description: 'An application that gives you business insights based on google maps reviews', link: 'https://github.com/the-null-character/VanIK-master-final' },
+            { name: 'Project 2', description: 'Description 2', link: 'https://github.com/username/project2' },
+            { name: 'Project 1', description: 'Description 1', link: 'https://github.com/username/project1' },
+            { name: 'Project 2', description: 'Description 2', link: 'https://github.com/username/project2' },
+            { name: 'Project 1', description: 'Description 1', link: 'https://github.com/username/project1' },
+            { name: 'Project 2', description: 'Description 2', link: 'https://github.com/username/project2' },
+            // Add more projects as needed
+        ];
+
+        // Function to generate project cards
+        function generateProjectCards(projects) {
+            const projectsList = document.getElementById('projects-list');
+            projects.forEach(project => {
+                const card = document.createElement('div');
+                card.className = 'col-md-4 project-card';
+                card.innerHTML = `
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">${project.name}</h5>
+                            <p class="card-text">${project.description}</p>
+                            <a href="${project.link}" class="btn btn-primary" target="_blank">GitHub</a>
+                        </div>
+                    </div>
+                `;
+                projectsList.appendChild(card);
+            });
+        }
+
+        // Call the function to generate project cards
+        generateProjectCards(projectsData);
+    </script>
+</body>
+</html>
